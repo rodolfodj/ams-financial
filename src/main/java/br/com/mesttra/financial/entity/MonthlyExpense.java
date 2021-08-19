@@ -1,6 +1,7 @@
 package br.com.mesttra.financial.entity;
 
 import br.com.mesttra.financial.enums.ExpenseType;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
+@Builder
 public class MonthlyExpense {
 
     @Id
